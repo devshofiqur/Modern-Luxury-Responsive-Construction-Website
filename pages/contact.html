@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Construction Group — get in touch for a consultation or quote." />
+  <title>Contact Us — Construction Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .form-success {
+      display: none;
+      background: rgba(46,125,50,0.1);
+      border: 1px solid rgba(46,125,50,0.3);
+      border-radius: 4px;
+      padding: 1.2rem;
+      text-align: center;
+      color: #2e7d32;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+    .form-success.show { display: block; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="sectors.html">Sectors</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="lang-btn"     id="langBtn">EN | বাং</button>
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="approach.html">Approach</a>
+  <a href="sectors.html">Sectors</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://img.freepik.com/premium-photo/cyber-security-data-protection-information-safety-encryption_1101054-65738.jpg?semt=ais_hybrid&w=740&q=80')"></div>
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>›</span><span class="current">Contact</span>
+    </nav>
+    <span class="section-label">Get In Touch</span>
+    <h1>Let's <span class="accent">Start Building</span></h1>
+    <p>Whether you have a specific project in mind or just want to explore possibilities, our team is ready to listen.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal">
+        <span class="section-label">Send a Message</span>
+        <h3>Request a <span class="accent">Consultation</span></h3>
+        <p>Fill in the form and one of our project specialists will be in touch within 24 hours.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+880 1700 000 000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sector">Project Type</label>
+            <select id="sector" name="sector">
+              <option value="">— Select a sector —</option>
+              <option value="residential">Residential</option>
+              <option value="commercial">Commercial</option>
+              <option value="industrial">Industrial</option>
+              <option value="infrastructure">Infrastructure</option>
+              <option value="healthcare">Healthcare / Education</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimated Budget</label>
+            <select id="budget" name="budget">
+              <option value="">— Select a range —</option>
+              <option value="small">Under ৳1 Crore</option>
+              <option value="medium">৳1 Crore – ৳10 Crore</option>
+              <option value="large">৳10 Crore – ৳50 Crore</option>
+              <option value="xlarge">Above ৳50 Crore</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Description *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project — location, scale, timeline, and any specific requirements..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;">Send Message →</button>
+          <div class="form-success" id="formSuccess" role="alert">
+            Thank you! Your message has been received. We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-wrap reveal">
+        <span class="section-label">Find Us</span>
+        <h3>Our <span class="accent">Offices</span></h3>
+        <p style="margin-bottom:2rem;">Visit us at our headquarters or reach out through any of the channels below.</p>
+
+        <div class="contact-detail">
+          <div class="cd-icon" aria-hidden="true">📍</div>
+          <div class="cd-text">
+            <h4>Head Office</h4>
+            <p>House 45, Road 12, Gulshan-2<br/>Dhaka 1212, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon" aria-hidden="true">📍</div>
+          <div class="cd-text">
+            <h4>Regional Office</h4>
+            <p>Agrabad Commercial Area<br/>Chittagong 4100, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon" aria-hidden="true">📞</div>
+          <div class="cd-text">
+            <h4>Phone</h4>
+            <a href="tel:+8801700000000">+880 1700 000 000</a><br/>
+            <a href="tel:+8801800000000">+880 1800 000 000</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon" aria-hidden="true">✉️</div>
+          <div class="cd-text">
+            <h4>Email</h4>
+            <a href="mailto:info@constructiongroup.com.bd">info@constructiongroup.com.bd</a><br/>
+            <a href="mailto:projects@constructiongroup.com.bd">projects@constructiongroup.com.bd</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon" aria-hidden="true">🕐</div>
+          <div class="cd-text">
+            <h4>Office Hours</h4>
+            <p>Sunday – Thursday: 9:00 AM – 6:00 PM<br/>Friday: 9:00 AM – 1:00 PM<br/>Saturday: Closed</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-placeholder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5573!2d90.4152!3d23.7976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ3JzUxLjQiTiA5MMKwMjQnNTQuNyJF!5e0!3m2!1sen!2sbd!4v1234567890"
+            width="100%" height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Construction Group office location on Google Maps"
+            aria-label="Map showing Construction Group office location in Gulshan, Dhaka">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:2rem;">
+      <p>&copy; 2026 <span class="gold">Dev-Shofiqur</span>. All rights reserved.</p>
+      <p>Designed with precision. Built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="../js/main.js"></script>
+<script>
+  // Contact form handler
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('formSuccess').classList.add('show');
+      btn.textContent = 'Message Sent!';
+      this.reset();
+    }, 1200);
+  });
+</script>
+</body>
+</html>

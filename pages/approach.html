@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our step-by-step construction approach — from planning to delivery." />
+  <title>Our Approach — Construction Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .approach-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      margin-bottom: 6rem;
+    }
+    .approach-detail:nth-child(even) .approach-text { order: 2; }
+    .approach-detail:nth-child(even) .approach-visual { order: 1; }
+    .approach-img {
+      height: 420px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .step-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .step-tag .num {
+      width: 48px; height: 48px;
+      background: var(--gold);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .step-tag .label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .approach-text p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+    .checklist { margin-top: 1.5rem; }
+    .checklist li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .checklist li::before {
+      content: '✓';
+      width: 22px; height: 22px;
+      background: rgba(201,146,74,0.1);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold);
+      font-size: 0.7rem;
+      flex-shrink: 0;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .value-card {
+      background: var(--gray);
+      padding: 2rem;
+      border-radius: 4px;
+      border-top: 3px solid var(--gold);
+      text-align: center;
+    }
+    .value-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .value-card h4 { margin-bottom: 0.5rem; }
+    .value-card p { font-size: 0.85rem; }
+    @media (max-width: 900px) {
+      .approach-detail { grid-template-columns: 1fr; gap: 2rem; }
+      .approach-detail:nth-child(even) .approach-text,
+      .approach-detail:nth-child(even) .approach-visual { order: unset; }
+      .values-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="approach.html" class="active">Approach</a></li>
+      <li><a href="sectors.html">Sectors</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="lang-btn"     id="langBtn">EN | বাং</button>
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="approach.html">Approach</a>
+  <a href="sectors.html">Sectors</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <span class="current">Our Approach</span>
+    </nav>
+    <span class="section-label">The Way We Work</span>
+    <h1>Our <span class="accent">Approach</span></h1>
+    <p>A disciplined, transparent methodology that ensures every project is delivered with precision, on time, and within budget.</p>
+  </div>
+</section>
+
+<!-- APPROACH STEPS -->
+<section class="section">
+  <div class="container">
+
+    <div class="approach-detail">
+      <div class="approach-visual reveal">
+        <div class="approach-img">
+          <img src="https://www.mobilemodularcontainers.com/blog/application/files/cache/thumbnails/788c39797c94a7580300ffc750bb81ef.jpg"
+               alt="Team planning session with blueprints" loading="lazy" />
+        </div>
+      </div>
+      <div class="approach-text reveal">
+        <div class="step-tag">
+          <div class="num">01</div>
+          <span class="label">Phase One</span>
+        </div>
+        <h2>Planning & <span class="accent">Consultation</span></h2>
+        <p>Every great structure begins long before the first shovel hits the ground. We invest deeply in understanding your vision, objectives, and constraints — conducting thorough site assessments, feasibility analyses, and stakeholder consultations.</p>
+        <p>Our planning phase eliminates costly surprises downstream and creates a shared roadmap that aligns all parties from day one.</p>
+        <ul class="checklist">
+          <li>Site survey & geotechnical assessment</li>
+          <li>Feasibility study & cost estimation</li>
+          <li>Regulatory compliance review</li>
+          <li>Risk identification & mitigation planning</li>
+          <li>Client brief & stakeholder alignment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="approach-detail">
+      <div class="approach-text reveal">
+        <div class="step-tag">
+          <div class="num">02</div>
+          <span class="label">Phase Two</span>
+        </div>
+        <h2>Design & <span class="accent">Engineering</span></h2>
+        <p>Our multi-disciplinary design team — architects, structural engineers, MEP consultants — work in close collaboration to develop detailed design solutions that are both visually compelling and structurally sound.</p>
+        <p>We use BIM (Building Information Modelling) to create precise 3D representations, enabling better decision-making before a single brick is laid.</p>
+        <ul class="checklist">
+          <li>Architectural concept & schematic design</li>
+          <li>Structural & MEP engineering</li>
+          <li>BIM modelling & clash detection</li>
+          <li>Value engineering & specification</li>
+          <li>Regulatory drawings & approvals</li>
+        </ul>
+      </div>
+      <div class="approach-visual reveal">
+        <div class="approach-img">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
+               alt="Architect reviewing building design blueprints" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <div class="approach-detail">
+      <div class="approach-visual reveal">
+        <div class="approach-img">
+          <img src="https://img.freepik.com/free-photo/building-new-concrete-houses_1398-3932.jpg?semt=ais_hybrid&w=740&q=80"
+               alt="Construction crew working on building structure" loading="lazy" />
+        </div>
+      </div>
+      <div class="approach-text reveal">
+        <div class="step-tag">
+          <div class="num">03</div>
+          <span class="label">Phase Three</span>
+        </div>
+        <h2>Execution & <span class="accent">Construction</span></h2>
+        <p>This is where plans become reality. Our experienced site managers and skilled tradespeople execute with discipline, adhering to the programme, quality standards, and safety protocols that define our reputation.</p>
+        <p>Daily progress reporting and real-time cost tracking keep clients informed and in control throughout the build.</p>
+        <ul class="checklist">
+          <li>Mobilisation & site setup</li>
+          <li>Subcontractor procurement & management</li>
+          <li>Daily site supervision & QA checks</li>
+          <li>Health, safety & environment compliance</li>
+          <li>Transparent client progress reporting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="approach-detail">
+      <div class="approach-text reveal">
+        <div class="step-tag">
+          <div class="num">04</div>
+          <span class="label">Phase Four</span>
+        </div>
+        <h2>Delivery & <span class="accent">Handover</span></h2>
+        <p>Completion is not just handing over keys — it's the culmination of months of meticulous work, validated by rigorous inspections and documented comprehensively for future reference and maintenance.</p>
+        <p>We walk every client through their completed project in detail, ensuring they're fully equipped to operate and maintain their asset long-term.</p>
+        <ul class="checklist">
+          <li>Final inspections & snagging</li>
+          <li>As-built documentation package</li>
+          <li>O&M manuals & warranties</li>
+          <li>Client walkthrough & training</li>
+          <li>12-month defects liability period</li>
+        </ul>
+      </div>
+      <div class="approach-visual reveal">
+        <div class="approach-img">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+               alt="Client receiving keys to new building" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <span class="section-label">Our Foundation</span>
+      <h2>The Values That <span class="accent">Drive Us</span></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">🎯</div>
+        <h4>Precision</h4>
+        <p>Every measurement, material, and milestone is managed with exacting attention to detail.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🤝</div>
+        <h4>Integrity</h4>
+        <p>Transparent pricing, honest timelines, and open communication with every client.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">💡</div>
+        <h4>Innovation</h4>
+        <p>Adopting new technologies and methods to build smarter, safer, and more efficiently.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">🌿</div>
+        <h4>Sustainability</h4>
+        <p>Minimising environmental impact through responsible sourcing and green building practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1590642916589-592bcd10dfad?w=1600&q=80')"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="container cta-content reveal">
+    <h2 style="color:#fff;">Ready to Start Your <span class="accent">Next Project?</span></h2>
+    <p>Let's talk about your vision and how we can bring it to life.</p>
+    <a href="contact.html" class="btn btn-gold">Get in Touch Today</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:2rem;">
+      <p>&copy; 2026 <span class="gold">Dev-Shofiqur</span>. All rights reserved.</p>
+      <p>Designed with precision. Built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

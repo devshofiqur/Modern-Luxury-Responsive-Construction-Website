@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Construction Group project portfolio — current and completed projects." />
+  <title>Our Projects — Construction Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="sectors.html">Sectors</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="lang-btn"     id="langBtn">EN | বাং</button>
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="approach.html">Approach</a>
+  <a href="sectors.html">Sectors</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>›</span><span class="current">Projects</span>
+    </nav>
+    <span class="section-label">Our Portfolio</span>
+    <h1>Our <span class="accent">Projects</span></h1>
+    <p>Over 340 projects completed across Bangladesh and the region — each one a testament to our commitment to excellence.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="current">Current Projects</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+      <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="all-projects-grid" id="projectsGrid">
+
+      <article class="proj-item reveal" data-category="current commercial" aria-label="The Pinnacle Business Centre project">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80"
+             alt="The Pinnacle Business Centre under construction" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status">In Progress</span>
+          <h4>The Pinnacle Business Centre</h4>
+          <div class="loc">Gulshan, Dhaka · Commercial · 42 Floors</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="completed residential" aria-label="Emerald Heights Residences project">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80"
+             alt="Emerald Heights Residences completed building" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status done">Completed 2024</span>
+          <h4>Emerald Heights Residences</h4>
+          <div class="loc">Banani, Dhaka · 320 Apartments</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="current industrial" aria-label="National Logistics Hub project">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80"
+             alt="National Logistics Hub construction site" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status">In Progress</span>
+          <h4>National Logistics Hub</h4>
+          <div class="loc">Gazipur · Industrial · 85,000 sqm</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="completed commercial" aria-label="The Meridian Tower project">
+        <img src="https://images.unsplash.com/photo-1470723710355-95304d8aece4?w=600&q=80"
+             alt="The Meridian Tower completed" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status done">Completed 2023</span>
+          <h4>The Meridian Tower</h4>
+          <div class="loc">Motijheel, Dhaka · 32 Floors</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="completed infrastructure" aria-label="Dhaka Ring Road Extension project">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl1n7udE4PXIHbuvqVxyZC9tCBUGFNQrqh2Q&s"
+             alt="Road infrastructure project completed" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status done">Completed 2022</span>
+          <h4>Dhaka Ring Road Extension</h4>
+          <div class="loc">Dhaka Metro · 28km Road Network</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="completed residential" aria-label="Riverside Luxury Villas project">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"
+             alt="Riverside Luxury Villas completed homes" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status done">Completed 2023</span>
+          <h4>Riverside Luxury Villas</h4>
+          <div class="loc">Purbachal · 60 Villas</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="current residential" aria-label="Horizon Park Residences project">
+        <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=600&q=80"
+             alt="Horizon Park Residences under construction" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status">In Progress</span>
+          <h4>Horizon Park Residences</h4>
+          <div class="loc">Uttara, Dhaka · 480 Units</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="completed commercial" aria-label="Premier Shopping Mall project">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80"
+             alt="Premier Shopping Mall completed" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status done">Completed 2022</span>
+          <h4>Premier Shopping Mall</h4>
+          <div class="loc">Sylhet · Retail · 120,000 sqft</div>
+        </div>
+      </article>
+
+      <article class="proj-item reveal" data-category="current infrastructure" aria-label="Coastal Highway Bridge project">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80"
+             alt="Coastal highway bridge under construction" loading="lazy" />
+        <div class="proj-meta">
+          <span class="status">In Progress</span>
+          <h4>Coastal Highway Bridge</h4>
+          <div class="loc">Cox's Bazar · Bridge · 1.2km Span</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Stats Banner -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;">
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:var(--gold);">
+          <span class="count-up" data-target="340" data-suffix="+">0+</span>
+        </div>
+        <div style="font-size:0.8rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mid);margin-top:0.5rem;">Total Projects</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:var(--gold);">
+          <span class="count-up" data-target="18" data-suffix="">0</span>
+        </div>
+        <div style="font-size:0.8rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mid);margin-top:0.5rem;">Active Projects</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:var(--gold);">
+          <span class="count-up" data-target="98" data-suffix="%">0%</span>
+        </div>
+        <div style="font-size:0.8rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mid);margin-top:0.5rem;">On-Time Rate</div>
+      </div>
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:var(--gold);">
+          <span class="count-up" data-target="12" data-suffix="">0</span>
+        </div>
+        <div style="font-size:0.8rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--mid);margin-top:0.5rem;">Countries Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1590642916589-592bcd10dfad?w=1600&q=80')"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="container cta-content reveal">
+    <h2 style="color:#fff;">Have a Project in Mind? <span class="accent">Let's Build It.</span></h2>
+    <p>Get a consultation and project quote from our expert team.</p>
+    <a href="contact.html" class="btn btn-gold">Request a Quote</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:2rem;">
+     <p>&copy; 2026 <span class="gold">Dev-Shofiqur</span>. All rights reserved.</p>
+      <p>Designed with precision. Built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

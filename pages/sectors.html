@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our construction sectors — residential, commercial, industrial, and more." />
+  <title>Our Sectors — Construction Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .sector-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .sector-detail-card {
+      position: relative;
+      height: 380px;
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .sector-detail-card.large { grid-column: span 2; height: 480px; }
+    .sector-detail-card img { height: 100%; transition: transform 0.7s ease; }
+    .sector-detail-card:hover img { transform: scale(1.06); }
+    .sector-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.1) 70%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 2.5rem;
+      transition: background var(--transition);
+    }
+    .sector-detail-card:hover .sector-overlay { background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 70%); }
+    .sector-overlay .tag-line {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .sector-overlay h3 { color: #fff; font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .sector-overlay p {
+      color: rgba(255,255,255,0);
+      font-size: 0.9rem;
+      max-height: 0; overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    .sector-detail-card:hover .sector-overlay p {
+      color: rgba(255,255,255,0.7); max-height: 120px; margin-top: 0.5rem;
+    }
+    .sector-stats {
+      display: flex; gap: 2rem; margin-top: 1rem;
+    }
+    .sector-stat { text-align: left; opacity: 0; transform: translateY(10px); transition: all 0.4s ease 0.1s; }
+    .sector-detail-card:hover .sector-stat { opacity: 1; transform: translateY(0); }
+    .sector-stat .num { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--gold); line-height: 1; }
+    .sector-stat .lbl { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+    @media (max-width: 768px) {
+      .sector-detail-grid { grid-template-columns: 1fr; }
+      .sector-detail-card.large { grid-column: span 1; height: 320px; }
+      .sector-detail-card { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo">
+      <img src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="approach.html">Approach</a></li>
+      <li><a href="sectors.html" class="active">Sectors</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="lang-btn"     id="langBtn">EN | বাং</button>
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html">Home</a>
+  <a href="approach.html">Approach</a>
+  <a href="sectors.html">Sectors</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80')"></div>
+  <div class="container page-hero-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>›</span><span class="current">Sectors</span>
+    </nav>
+    <span class="section-label">Where We Build</span>
+    <h1>Our <span class="accent">Sectors</span></h1>
+    <p>From luxury residences to large-scale industrial facilities — we bring expertise across the full spectrum of construction.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;max-width:620px;margin:0 auto 1rem;" class="reveal">
+      <span class="section-label">Industries We Serve</span>
+      <h2>Built for Every <span class="accent">Sector</span></h2>
+      <p style="margin-top:1rem;">Hover over each sector to explore our expertise and project statistics.</p>
+    </div>
+
+    <div class="sector-detail-grid">
+
+      <div class="sector-detail-card large reveal">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80"
+             alt="Residential high-rise apartment complex" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 01</span>
+          <h3>Residential Construction</h3>
+          <p>From single-family luxury villas to high-rise apartment complexes, we create living spaces that balance comfort, aesthetics, and long-term durability. Every home we build reflects our commitment to craftsmanship.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">140+</div><div class="lbl">Projects</div></div>
+            <div class="sector-stat"><div class="num">12,500+</div><div class="lbl">Units Delivered</div></div>
+            <div class="sector-stat"><div class="num">25 yrs</div><div class="lbl">Experience</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-detail-card reveal">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80"
+             alt="Commercial office tower" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 02</span>
+          <h3>Commercial Buildings</h3>
+          <p>Office towers, retail centres, and hotels engineered for maximum commercial value and operational excellence.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">85+</div><div class="lbl">Projects</div></div>
+            <div class="sector-stat"><div class="num">2.4M sqm</div><div class="lbl">Built</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-detail-card reveal">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=700&q=80"
+             alt="Industrial warehouse facility" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 03</span>
+          <h3>Industrial Facilities</h3>
+          <p>Warehouses, factories, and processing plants built for efficiency, safety compliance, and long-term reliability.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">60+</div><div class="lbl">Facilities</div></div>
+            <div class="sector-stat"><div class="num">500k sqm</div><div class="lbl">Completed</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-detail-card reveal">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+             alt="Road and infrastructure project" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 04</span>
+          <h3>Infrastructure</h3>
+          <p>Roads, bridges, drainage systems, and civil works that serve communities and support national development.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">35+</div><div class="lbl">Projects</div></div>
+            <div class="sector-stat"><div class="num">800km</div><div class="lbl">Road Built</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-detail-card reveal">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80"
+             alt="Healthcare hospital building" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 05</span>
+          <h3>Healthcare & Education</h3>
+          <p>Hospitals, clinics, schools, and universities — built to serve critical social functions with careful attention to compliance and well-being.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">28+</div><div class="lbl">Institutions</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sector-detail-card reveal">
+        <img src="https://inspirelivision.s3.eu-central-1.amazonaws.com/original/cache/fw792_2022-01-13-11-20-04-9af22d127703713.6147905385d2c.jpeg"
+             alt="Hotel and hospitality building" loading="lazy" />
+        <div class="sector-overlay">
+          <span class="tag-line">Sector 06</span>
+          <h3>Hospitality & Tourism</h3>
+          <p>Hotels, resorts, and leisure facilities where design excellence and operational requirements meet in perfect harmony.</p>
+          <div class="sector-stats">
+            <div class="sector-stat"><div class="num">18+</div><div class="lbl">Properties</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1590642916589-592bcd10dfad?w=1600&q=80')"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="container cta-content reveal">
+    <h2 style="color:#fff;">Don't See Your Sector? <span class="accent">Let's Talk.</span></h2>
+    <p>We take on complex and bespoke construction challenges. Get in touch to discuss your specific needs.</p>
+    <a href="contact.html" class="btn btn-gold">Contact Our Team</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:2rem;">
+      <p>&copy; 2026 <span class="gold">Dev-Shofiqur</span>. All rights reserved.</p>
+      <p>Designed with precision. Built to last.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Construction Group — Premium construction company delivering excellence in residential, commercial, and industrial projects." />
+  <title>Construction Group — Building Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Construction Group Home">
+      <img src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy"/>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about"    data-nav-about>About</a></li>
+      <li><a href="pages/approach.html"   data-nav-approach>Approach</a></li>
+      <li><a href="pages/sectors.html"    data-nav-sectors>Sectors</a></li>
+      <li><a href="pages/projects.html"   data-nav-projects>Projects</a></li>
+      <li><a href="pages/contact.html"    data-nav-contact>Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+      <button class="lang-btn"     id="langBtn"     aria-label="Toggle language">EN | বাং</button>
+      <a href="pages/contact.html" class="btn btn-gold">Get a Quote</a>
+      <button class="hamburger"    id="hamburger"   aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#about"              data-nav-about>About</a>
+  <a href="pages/approach.html" data-nav-approach>Approach</a>
+  <a href="pages/sectors.html"  data-nav-sectors>Sectors</a>
+  <a href="pages/projects.html" data-nav-projects>Projects</a>
+  <a href="pages/contact.html"  data-nav-contact>Contact</a>
+  <a href="pages/contact.html" class="btn btn-gold">Get a Quote</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home" aria-label="Hero section">
+  <div class="hero-bg" role="img" aria-label="Modern construction site aerial view"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-line"></div>
+        <span data-hero-eyebrow>Building the Future</span>
+      </div>
+      <h1>We Build <span class="accent">Landmarks</span><br />That Endure</h1>
+      <p>From groundbreaking to handover, we deliver construction excellence with precision engineering and uncompromising quality standards.</p>
+      <div class="hero-cta">
+        <a href="pages/projects.html" class="btn btn-gold" data-hero-cta-primary>View Our Projects</a>
+        <a href="pages/contact.html"  class="btn btn-outline" data-hero-cta-secondary>Get In Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Company statistics">
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-up" data-target="25" data-suffix="+">0+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-up" data-target="340" data-suffix="+">0+</span></div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-up" data-target="48" data-suffix="">0</span></div>
+      <div class="stat-label">Expert Engineers</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ══ INTRO STRIP ══ -->
+<div class="intro-strip">
+  <div class="container">
+    <p>Trusted by leading developers and government bodies across the region — delivering on time, on budget, every time.</p>
+    <a href="pages/contact.html" class="btn btn-white">Start Your Project →</a>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section class="section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
+               alt="Construction team reviewing blueprints on site"
+               loading="lazy" />
+        </div>
+        <div class="about-img-accent">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80"
+               alt="Modern construction detail"
+               loading="lazy" />
+        </div>
+        <div class="about-badge" aria-label="25 years of excellence">
+          <div class="num">25</div>
+          <div class="lbl">Years of<br/>Excellence</div>
+        </div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 id="about-heading" class="section-title">A Legacy Built on <span class="accent">Solid Foundations</span></h2>
+        <p class="section-body">Since 1999, Construction Group has been shaping skylines and communities with structures built to outlast generations. Our team of expert engineers, project managers, and craftsmen bring unmatched dedication to every build.</p>
+        <div class="about-features" style="margin-top:2rem;">
+          <div class="feat-item">
+            <div class="feat-icon" aria-hidden="true">🏗️</div>
+            <div class="feat-text">
+              <h4>Structural Integrity</h4>
+              <p>Every build meets the highest safety standards</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" aria-hidden="true">⏱️</div>
+            <div class="feat-text">
+              <h4>On-Time Delivery</h4>
+              <p>98% of projects delivered on schedule</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" aria-hidden="true">🌿</div>
+            <div class="feat-text">
+              <h4>Sustainable Builds</h4>
+              <p>Green construction practices integrated</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" aria-hidden="true">🏆</div>
+            <div class="feat-text">
+              <h4>Award-Winning</h4>
+              <p>Nationally recognized for design excellence</p>
+            </div>
+          </div>
+        </div>
+        <a href="pages/approach.html" class="btn btn-gold" style="margin-top:2rem;">Our Approach →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section section-alt" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <span class="section-label">What We Do</span>
+        <h2 id="services-heading" class="section-title">Core <span class="accent">Services</span></h2>
+      </div>
+      <a href="pages/sectors.html" class="btn btn-outline">All Sectors →</a>
+    </div>
+
+    <div class="services-grid" role="list">
+      <article class="service-card reveal" role="listitem">
+        <img src="https://s3da-design.com/wp-content/uploads/2018/10/How-to-estimate-residential-construction-cost-and-home-design-guide.jpg">
+        <div class="service-num">01</div>
+        <h3>Residential Construction</h3>
+        <p>Luxury villas, apartment complexes, and housing developments built with precision and care. From foundation to finishing, we exceed expectations.</p>
+      </article>
+      <article class="service-card reveal" role="listitem">
+        <img src="https://steelframebuildingsupplier.co.uk/wp-content/uploads/2023/04/2020723_b_office-building-designs-architectures-ideas_office-decoration_960x450.jpg">
+        <div class="service-num">02</div>
+        <h3>Commercial Buildings</h3>
+        <p>Office towers, retail centres, and mixed-use developments that balance aesthetics, function, and investment value for our clients.</p>
+      </article>
+      <article class="service-card reveal" role="listitem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHaLM_uQlrc-NLenczQ6wQFiPE_lcoGDiaAA&s">
+        <div class="service-num">03</div>
+        <h3>Industrial Facilities</h3>
+        <p>Warehouses, factories, and logistics hubs engineered for maximum efficiency, durability, and compliance with industrial standards.</p>
+      </article>
+      <article class="service-card reveal" role="listitem">
+        <img src="https://www.iccgsa.com/assets/galerias/servicios/pic-servicios_oinfra_1.jpg">
+        <div class="service-num">04</div>
+        <h3>Infrastructure Works</h3>
+        <p>Roads, bridges, drainage systems, and civil infrastructure projects that serve communities for decades to come.</p>
+      </article>
+      <article class="service-card reveal" role="listitem">
+        <img src="https://cdn.prod.website-files.com/5e185d81b1025a75a986bb6a/5ecce45c26074e3573dc4955_Techspace-Kreuzberg%20-%20HEJM%20-4871-HDR-Bearbeitet(small).jpg">
+        <div class="service-num">05</div>
+        <h3>Renovation & Fit-Out</h3>
+        <p>Transforming existing spaces with high-quality renovation, interior fit-out, and structural modification services.</p>
+      </article>
+      <article class="service-card reveal" role="listitem">
+        <img src="https://www.walterassociates.co.uk/wp-content/uploads/2024/05/What-are-the-main-principles-of-strategic-project-management.jpg">
+        <div class="service-num">06</div>
+        <h3>Project Management</h3>
+        <p>End-to-end project management, cost consulting, and site supervision to keep your project on time and within budget.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED PROJECTS ══ -->
+<section class="section" id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <span class="section-label">Our Portfolio</span>
+        <h2 id="projects-heading" class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <a href="pages/projects.html" class="btn btn-outline">View All Projects →</a>
+    </div>
+
+    <div class="projects-grid reveal">
+      <div class="project-card span-row">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80"
+             alt="The Meridian Tower — Commercial high-rise project" loading="lazy" />
+        <div class="project-overlay">
+          <span class="tag">Commercial</span>
+          <h3>The Meridian Tower</h3>
+          <p>Dhaka, Bangladesh · 32 Floors · Completed 2023</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=700&q=80"
+             alt="Riverside Residences — Luxury apartment complex" loading="lazy" />
+        <div class="project-overlay">
+          <span class="tag">Residential</span>
+          <h3>Riverside Residences</h3>
+          <p>Chittagong · 240 Units · Completed 2024</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=700&q=80"
+             alt="National Logistics Hub — Industrial facility" loading="lazy" />
+        <div class="project-overlay">
+          <span class="tag">Industrial</span>
+          <h3>National Logistics Hub</h3>
+          <p>Gazipur · 85,000 sqm · In Progress</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS TEASER ══ -->
+<section class="section section-alt" id="process" aria-labelledby="process-heading">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <span class="section-label">How We Work</span>
+      <h2 id="process-heading">Our Proven <span class="accent">Process</span></h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="step-circle">01</div>
+        <h4>Planning</h4>
+        <p>Site analysis, feasibility studies, and detailed project scoping to establish solid foundations.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-circle">02</div>
+        <h4>Design</h4>
+        <p>Architectural and structural design refined through close collaboration with clients and engineers.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-circle">03</div>
+        <h4>Execution</h4>
+        <p>Precision construction managed by experienced site supervisors with rigorous quality control.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-circle">04</div>
+        <h4>Delivery</h4>
+        <p>Final inspections, client walkthroughs, and seamless handover with full documentation.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="pages/approach.html" class="btn btn-gold">Explore Our Approach →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section testimonials" id="testimonials" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:1rem;">
+      <span class="section-label">Client Words</span>
+      <h2 id="testi-heading">What Our <span class="accent">Clients Say</span></h2>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card reveal">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <p>Construction Group delivered our 24-story commercial tower three weeks ahead of schedule. Their attention to detail and transparent communication set them apart from every other firm we've worked with.</p>
+        <div class="testi-author">
+          <div class="author-avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                 alt="Portrait of Rafiq Ahmed" loading="lazy" />
+          </div>
+          <div>
+            <div class="author-name">Rafiq Ahmed</div>
+            <div class="author-role">CEO, Skyline Developments</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card reveal">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <p>The level of professionalism and craftsmanship on our residential complex was outstanding. Every unit was finished to an exceptional standard and residents are incredibly satisfied.</p>
+        <div class="testi-author">
+          <div class="author-avatar">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80"
+                 alt="Portrait of Nadia Islam" loading="lazy" />
+          </div>
+          <div>
+            <div class="author-name">Nadia Islam</div>
+            <div class="author-role">Director, Urban Living Co.</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card reveal">
+        <div class="quote-mark" aria-hidden="true">"</div>
+        <p>Partnering with Construction Group for our industrial facility was the best decision we made. They understood our operational needs and delivered a facility that exceeds our expectations in every way.</p>
+        <div class="testi-author">
+          <div class="author-avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                 alt="Portrait of Karim Hassan" loading="lazy" />
+          </div>
+          <div>
+            <div class="author-name">Karim Hassan</div>
+            <div class="author-role">Operations Head, LogiPlex BD</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<section class="cta-banner" aria-labelledby="cta-heading">
+  <div class="cta-banner-bg" role="img" aria-label="Construction site background"></div>
+  <div class="cta-banner-overlay"></div>
+  <div class="container cta-content reveal">
+    <span class="section-label">Ready to Build?</span>
+    <h2 id="cta-heading" style="color:#fff;">Let's Create Something<br/><span class="accent">Extraordinary Together</span></h2>
+    <p>From concept to completion, we're your trusted partner in construction excellence.</p>
+    <div>
+      <a href="pages/contact.html" class="btn btn-gold">Request a Consultation</a>
+      <a href="pages/projects.html" class="btn btn-outline">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img style="width: 100px;" height="auto" src="https://i.ibb.co.com/RpzKs79J/Roca-Group-02-copy.png" alt="Construction Group Logo" loading="lazy" />
+        <p>Building exceptional structures since 1999. Quality, integrity, and innovation in every project we undertake.</p>
+        <div class="social-links" style="margin-top:1.5rem;" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+          <a href="#" class="social-link" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="pages/approach.html">Our Approach</a></li>
+          <li><a href="pages/sectors.html">Sectors</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Residential</a></li>
+          <li><a href="#">Commercial</a></li>
+          <li><a href="#">Industrial</a></li>
+          <li><a href="#">Infrastructure</a></li>
+          <li><a href="#">Renovation</a></li>
+          <li><a href="#">Project Management</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <p>House 45, Road 12, Gulshan-2,<br/>Dhaka 1212, Bangladesh</p>
+        </div>
+        <div class="footer-contact-item">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <a href="tel:+8801700000000">+880 1700 000 000</a>
+        </div>
+        <div class="footer-contact-item">
+          <div class="contact-icon" aria-hidden="true">✉️</div>
+          <a href="mailto:info@constructiongroup.com.bd">info@constructiongroup.com.bd</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 <span class="gold">Dev-Shofiqur</span>. All rights reserved.</p>
+      <p>Designed with precision. Built to last.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-top" id="backTop" aria-label="Back to top" title="Scroll to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
